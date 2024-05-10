@@ -1,20 +1,38 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function FullPage() {
+  const secRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: secRef,
+    offset: ["start end", "end start"],
+  });
+  const xTransform = useTransform(
+    scrollYProgress,
+    [1, 0.5, 0.1, 0],
+    [-1000, 0, 0, 0]
+  );
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
   return (
     <>
-      <FullpageStyled>
-        <div className="image">
+      <FullpageStyled ref={secRef}>
+        <motion.div
+          className="image"
+          style={{
+            scale: scale,
+            x: xTransform,
+          }}
+        >
           <Image
             src="/images/rover.jpg"
             alt="img"
             fill={true}
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
-        </div>
+        </motion.div>
       </FullpageStyled>
     </>
   );

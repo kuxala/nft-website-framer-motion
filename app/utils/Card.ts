@@ -1,44 +1,45 @@
-import monkey from "/public/images/monkey.png";
-import bulb from "/public/images/bulb_tree.png";
-import smoke_2 from "/public/images/monkey.png";
-import smoke_head from "/public/images/smoke_head.png";
-import smoke from "/public/images/smoke_2.png";
-import bitcoin from "/public/images/bitcoin.jpg";
+import doctor from "/public/images/10.png"
+import policemen from "/public/images/35.png"
+import coolguy from "/public/images/71.png"
+import captain from "/public/images/194.png"
+import cowboy from "/public/images/333.png"
+
 
 export const cards = [
   {
     id: 1,
-    title: "Monkey King",
+    title: "Doctor",
     description: "A monkey king who is a disciple of Buddha.",
-    image: bitcoin,
+    image: doctor,
     link: "/monkey-king",
   },
   {
     id: 2,
-    title: "Bulb Tree",
+    title: "Policemen",
     description: "A tree that grows bulbs.",
-    image: bulb,
+    image: policemen,
     link: "/bulb-tree",
   },
   {
     id: 3,
-    title: "Smoke",
+    title: "Captain",
     description: "A smoke that is a byproduct of fire.",
-    image: smoke,
-    link: "/smoke",
-  },
-  {
-    id: 4,
-    title: "Smoke Head",
-    description: "A smoke that is a byproduct of fire.",
-    image: smoke_head,
+    image: captain,
     link: "/smoke-head",
   },
   {
-    id: 5,
-    title: "Smoke 2",
+    id: 4,
+    title: "Cool guy",
     description: "A smoke that is a byproduct of fire.",
-    image: smoke_2,
+    image: coolguy,
+    link: "/smoke",
+  },
+
+  {
+    id: 5,
+    title: "Cowboy",
+    description: "A smoke that is a byproduct of fire.",
+    image: cowboy,
     link: "/smoke-2",
   },
 ];

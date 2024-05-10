@@ -62,6 +62,7 @@ export default function Header() {
                 color="#fff"
                 border="1px solid #f2994a"
                 icon={<FaRocket />}
+                link="https://opensea.io/collection/bored-devi-club"
               />
               <Button name="Learn More" />
             </div>

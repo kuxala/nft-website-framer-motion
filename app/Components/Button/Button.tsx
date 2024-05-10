@@ -8,6 +8,7 @@ interface ButtonProps {
   background?: string;
   color?: string;
   border?: string;
+  link?: string;
 }
 export default function Button({
   name,
@@ -15,6 +16,7 @@ export default function Button({
   background = "var(--color-bg)",
   color,
   border,
+  link,
 }: ButtonProps) {
   return (
     <>
@@ -24,6 +26,7 @@ export default function Button({
           color: color,
           border: border,
         }}
+        href={link}
       >
         {icon && icon}
         {name}
@@ -31,7 +34,7 @@ export default function Button({
     </>
   );
 }
-const ButtonStyled = styled.button`
+const ButtonStyled = styled.a`
   padding: 0.8rem 2rem;
   border-radius: 30px;
   border: 2px solid var(--color-border);
