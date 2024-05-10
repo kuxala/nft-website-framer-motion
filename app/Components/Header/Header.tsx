@@ -16,6 +16,7 @@ export default function Header() {
 
   const hoverHero = hover3d(hero, { x: 30, y: -40, z: 30 });
   const imageHover = hover3d(hero, { x: 20, y: -5, z: 11 });
+
   return (
     <>
       <HeaderStyled ref={hero}>
