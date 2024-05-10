@@ -27,10 +27,13 @@ export default function FullPage() {
           }}
         >
           <Image
-            src="/images/rover.jpg"
+            src="/images/images.jpg"
             alt="img"
             fill={true}
-            style={{ objectFit: "cover", objectPosition: "center" }}
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
           />
         </motion.div>
       </FullpageStyled>
