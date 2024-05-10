@@ -39,27 +39,25 @@ export default function TextSection() {
   return (
     <>
       <TextSectionStyled>
+        <TextWrapper>Why Devi's Realm?</TextWrapper>
         <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
+          Step into a world where ancient Georgian mythology meets modern
+          digital art.
         </TextWrapper>
         <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
+          Devi's Realm is a captivating NFT collection that brings to life the
+          legendary Devi
         </TextWrapper>
         <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
+          an enigmatic and powerful spirit from Georgian folklore.
         </TextWrapper>
         <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
+          Our unique project features 1,000 distinct NFT artworks,
         </TextWrapper>
         <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
+          each a mesmerizing depiction of the Devi in various forms,
         </TextWrapper>
-        <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
-        </TextWrapper>
-        <TextWrapper>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
-        </TextWrapper>
+        <TextWrapper>settings, and stories.</TextWrapper>
       </TextSectionStyled>
     </>
   );
