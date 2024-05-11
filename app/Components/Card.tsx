@@ -11,7 +11,7 @@ export default function Card({ title, description, image }: any) {
         <p className="new">New</p>
         <div className="text">
           <h3>{title}</h3>
-          <p>{description}</p>
+          {/* <p>{description}</p> */}
         </div>
         <Image
           src={image}
